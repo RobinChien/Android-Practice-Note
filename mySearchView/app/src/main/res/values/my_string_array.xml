@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_string_array">
+        <item>aaa</item>
+        <item>aab</item>
+        <item>aba</item>
+        <item>baa</item>
+        <item>abb</item>
+        <item>bab</item>
+        <item>bba</item>
+        <item>bbb</item>
+        <item>ccc</item>
+        <item>cac</item>
+    </string-array>
+</resources>

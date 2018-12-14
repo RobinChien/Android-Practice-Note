@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextWrite"
+        android:layout_width="348dp"
+        android:layout_height="106dp"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextRead"
+        android:layout_width="348dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        app:layout_constraintStart_toStartOf="@+id/editTextWrite"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/writeInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:textSize="8sp"
+        android:text="writeInternal"
+        android:onClick="writeInternalOnClick"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ReadInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="8sp"
+        android:text="ReadInternal"
+        android:onClick="ReadInternalOnClick"
+        app:layout_constraintStart_toStartOf="@+id/writeInternalButton"
+        app:layout_constraintTop_toBottomOf="@+id/writeInternalButton" />
+
+    <Button
+        android:id="@+id/WriteExternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:onClick="WriteExternalOnClick"
+        android:text="WriteExternal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/writeInternalButton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ReadExternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="8sp"
+        android:text="ReadExternal"
+        android:onClick="ReadExternalOnClick"
+        app:layout_constraintStart_toStartOf="@+id/WriteExternalButton"
+        app:layout_constraintTop_toBottomOf="@+id/WriteExternalButton" />
+
+    <Button
+        android:id="@+id/DeleteInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="DeleteInternalOnClick"
+        android:text="DeleteInternal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/WriteExternalButton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWrite"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/DeleteExternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:textSize="8sp"
+        android:text="DeleteExternal"
+        android:onClick="DeleteExternalOnClick"
+        app:layout_constraintStart_toStartOf="@+id/DeleteInternalButton"
+        app:layout_constraintTop_toBottomOf="@+id/DeleteInternalButton" />
+
+</android.support.constraint.ConstraintLayout>
